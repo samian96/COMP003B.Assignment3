@@ -19,7 +19,7 @@ namespace COMP003B.Assignment3.Models
         [Required]
         [StringLength(6)]
 
-        public string EventCode { get; set }
+        public string EventCode { get; set; }
 
         [Required]
         [Range(1,10)]
