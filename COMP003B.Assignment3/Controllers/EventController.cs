@@ -13,5 +13,11 @@ namespace COMP003B.Assignment3.Controllers
             return View();
         }
 
+        [HttpPost("event/register")]
+
+        public IActionResult Register([FromForm] string EventCode)
+        {
+            return View(EventCode);
+        }
     }
 }
