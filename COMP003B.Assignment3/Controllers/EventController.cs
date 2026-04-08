@@ -24,5 +24,12 @@ namespace COMP003B.Assignment3.Controllers
 
             return RedirectToAction("Success", registration);
         }
+
+        [Route("success")]
+
+        public IActionResult Success(EventRegistration registration)
+        {
+            return View(registration);
+        }
     }
 }
