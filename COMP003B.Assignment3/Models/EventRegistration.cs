@@ -9,7 +9,7 @@ namespace COMP003B.Assignment3.Models
         [Required]
         [StringLength(100, MinimumLength = 3)]
 
-        public string Name { get; set; }
+        public string FullName { get; set; }
 
         [Required]
         [EmailAddress]
@@ -17,9 +17,9 @@ namespace COMP003B.Assignment3.Models
         public string Email { get; set; }
 
         [Required]
-        [StringLength(6)]
+        [StringLength(20, MinimumLength = 3)]
 
-        public string EventCode { get; set; }
+        public string EventCode { get; set; } = "Spring-2026";
 
         [Required]
         [Range(1,10)]
