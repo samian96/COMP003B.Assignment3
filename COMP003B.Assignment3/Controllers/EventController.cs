@@ -25,6 +25,17 @@ namespace COMP003B.Assignment3.Controllers
             return RedirectToAction("Success", registration);
         }
 
+        [HttpGet("register")] 
+
+        public IActionResult EventBlank([FromForm] EventRegistration registration)
+        {
+            if (ModelState.IsValid)
+            {
+                return View(registration);
+            }
+            return RedirectToAction("register" , registration);
+        }
+
         [Route("success")]
 
         public IActionResult Success(EventRegistration registration)
