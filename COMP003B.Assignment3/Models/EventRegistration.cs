@@ -24,7 +24,7 @@ namespace COMP003B.Assignment3.Models
         [Required]
         [StringLength(20, MinimumLength = 3)]
 
-        public string EventBlank { get; set; }
+        public string EventBlank { get; set; } 
 
         [Required]
         [Range(1,10)]
